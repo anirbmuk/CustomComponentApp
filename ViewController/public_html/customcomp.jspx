@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:cc="/customcomp">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Custom Comp" id="d1">
+            <af:messages id="m1"/>
+            <af:form id="f1">
+                <af:panelGroupLayout id="pgl1" layout="scroll" styleClass="AFStretchWidth">
+                    <af:panelTabbed position="above" id="pt1" styleClass="AFStretchWidth">
+                        <af:showDetailItem id="tab1" text="Employee Search" disclosed="true" stretchChildren="first">
+                            <cc:tablesearch criteriaName="EmployeesSearchCriteriaQuery" tableBinding="EmployeesVO1"
+                                            id="t1" searchHeaderLabel="Search Employees"/>
+                        </af:showDetailItem>
+                        <af:showDetailItem id="tab2" text="Department Search" stretchChildren="first">
+                            <cc:tablesearch criteriaName="DepartmentsSearchCriteriaQuery" tableBinding="DepartmentsVO1"
+                                            id="t2" searchHeaderLabel="Seach Departments"/>
+                        </af:showDetailItem>
+                    </af:panelTabbed>
+                </af:panelGroupLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
