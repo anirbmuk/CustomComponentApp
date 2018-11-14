@@ -65,7 +65,14 @@ FROM
     ColumnType="INTEGER"
     AliasName="EMPLOYEE_ID"
     Expression="EMPLOYEE_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.EmployeeId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="FirstName"
     IsUpdateable="false"
@@ -80,6 +87,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.FirstName_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="LastName"
@@ -95,6 +108,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="25"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.LastName_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="Email"
@@ -110,6 +129,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="25"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.Email_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="PhoneNumber"
@@ -125,6 +150,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.PhoneNumber_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="HireDate"
@@ -135,7 +166,18 @@ FROM
     ColumnType="DATE"
     AliasName="HIRE_DATE"
     Expression="HIRE_DATE"
-    SQLType="DATE"/>
+    SQLType="DATE">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.HireDate_LABEL"/>
+        <FMT_FORMAT
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.HireDate_FMT_FORMAT"/>
+        <FMT_FORMATTER
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.HireDate_FMT_FORMATTER"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="JobId"
     IsUpdateable="false"
@@ -150,6 +192,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="10"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.JobId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="Salary"
@@ -162,7 +210,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="SALARY"
     Expression="SALARY"
-    SQLType="NUMERIC"/>
+    SQLType="NUMERIC">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.Salary_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="CommissionPct"
     IsUpdateable="false"
@@ -174,7 +229,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="COMMISSION_PCT"
     Expression="COMMISSION_PCT"
-    SQLType="NUMERIC"/>
+    SQLType="NUMERIC">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.CommissionPct_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="ManagerId"
     IsUpdateable="false"
@@ -186,7 +248,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="MANAGER_ID"
     Expression="MANAGER_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.ManagerId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="DepartmentId"
     IsUpdateable="false"
@@ -198,7 +267,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="DEPARTMENT_ID"
     Expression="DEPARTMENT_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.EmployeesVO.DepartmentId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewCriteria
     Name="EmployeesSearchCriteria"
     ViewObjectName="blog.anirbanm.ccapp.model.vo.EmployeesVO"

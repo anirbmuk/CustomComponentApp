@@ -47,7 +47,14 @@ FROM
     ColumnType="INTEGER"
     AliasName="DEPARTMENT_ID"
     Expression="DEPARTMENT_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.DepartmentsVO.DepartmentId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="DepartmentName"
     IsUpdateable="false"
@@ -62,6 +69,12 @@ FROM
     <DesignTime>
       <Attr Name="_DisplaySize" Value="30"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.DepartmentsVO.DepartmentName_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="ManagerId"
@@ -74,7 +87,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="MANAGER_ID"
     Expression="MANAGER_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.DepartmentsVO.ManagerId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="LocationId"
     IsUpdateable="false"
@@ -86,7 +106,14 @@ FROM
     ColumnType="NUMBER"
     AliasName="LOCATION_ID"
     Expression="LOCATION_ID"
-    SQLType="NUMERIC"/>
+    SQLType="INTEGER">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="blog.anirbanm.ccapp.model.vo.DepartmentsVO.LocationId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewCriteria
     Name="DepartmentsSearchCriteria"
     ViewObjectName="blog.anirbanm.ccapp.model.vo.DepartmentsVO"
